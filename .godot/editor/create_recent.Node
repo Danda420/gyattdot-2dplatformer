@@ -1,0 +1,14 @@
+Panel
+Node
+Label
+CanvasLayer
+CollisionShape2D
+AnimatedSprite2D
+Area2D
+Button
+RichTextLabel
+TextEdit
+TextureRect
+Sprite2D
+ParallaxLayer
+ParallaxBackground

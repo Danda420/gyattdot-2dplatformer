@@ -1,0 +1,10 @@
+res://lvl3.tscn
+res://scenes/main_char.tscn
+res://scenes/finishFlag.tscn
+res://finish_scene.tscn
+res://lvl1.tscn
+res://lvl2.tscn
+res://scenes/coin.tscn
+res://main.tscn
+res://scenes/coin.gd
+res://finish_scene.gd
