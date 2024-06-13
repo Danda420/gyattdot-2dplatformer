@@ -15,4 +15,5 @@ func _process(delta):
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://main.tscn")
 	GameManager.reset_score()
+	GameManager.reset_health()
 

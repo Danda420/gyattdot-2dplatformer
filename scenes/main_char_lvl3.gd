@@ -6,6 +6,14 @@ const JUMP_VELOCITY = -650.0
 const DASH_SPEED = 800.0
 const DASH_DURATION = 0.2
 
+@onready var health_label = $"/root/lvl3/Score_Health/Panel/Health"
+
+var health = 5
+
+func _ready():
+	update_health_label()
+	GameManager.connect("health_changed", Callable(self, "_on_health_changed"))
+	
 # Variables
 @onready var sprite_2d = $Sprite2D
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -61,5 +69,25 @@ func start_dash(direction: float):
 		dash_timer = DASH_DURATION
 		velocity.x = direction * DASH_SPEED
 
+func die():
+	GameManager.decrease_health(1)
+	if GameManager.get_health() <= 0:
+		game_over()
+	else:
+		respawn()
+
 func respawn():
 	global_position = Vector2(100, 100)
+
+func game_over():
+	get_tree().change_scene_to_file("res://game_over.tscn")
+
+func update_health_label():
+	var health_display = ""
+	for i in range(GameManager.get_health()):
+		health_display += "❤️"
+	health_label.text = health_display
+
+func _on_health_changed():
+	update_health_label()
+

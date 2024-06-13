@@ -1,7 +1,6 @@
 extends Node
 
-@onready var score_label = %Label
-
+@onready var score_label = %Score
 
 func _ready():
 	update_score()
