@@ -1,10 +1,10 @@
+CollisionShape2D
+AnimatedSprite2D
+Area2D
 Panel
 Node
 Label
 CanvasLayer
-CollisionShape2D
-AnimatedSprite2D
-Area2D
 Button
 RichTextLabel
 TextEdit

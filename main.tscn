@@ -13,6 +13,7 @@ offset_right = 1151.0
 offset_bottom = 644.0
 
 [node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 0
 offset_right = 1151.0
 offset_bottom = 648.0
 size_flags_horizontal = 3

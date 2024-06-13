@@ -36,3 +36,7 @@ func _physics_process(delta):
 	
 	var isLeft = velocity.x < 0
 	sprite_2d.flip_h = isLeft
+
+
+func respawn():
+	global_position = Vector2(100, 100)

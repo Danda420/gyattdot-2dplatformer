@@ -115,7 +115,7 @@ position_smoothing_speed = 7.0
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0.1, 0.1)
-motion_mirroring = Vector2(1080, 540)
+motion_mirroring = Vector2(800, 316)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource("5_tf60n")
