@@ -1010,10 +1010,10 @@ vertical_alignment = 1
 position = Vector2(2143, 565)
 
 [node name="Fire2" parent="." instance=ExtResource("8_3e50p")]
-position = Vector2(2202, 565)
+position = Vector2(2177, 565)
 
 [node name="Fire3" parent="." instance=ExtResource("8_3e50p")]
-position = Vector2(2262, 566)
+position = Vector2(2210, 566)
 
 [node name="permen1" parent="." instance=ExtResource("8_ky4po")]
 position = Vector2(444, 552)

@@ -23,6 +23,7 @@ ScoreManager="*res://score_counter_autoload.gd"
 [display]
 
 window/stretch/mode="canvas_items"
+window/stretch/aspect="ignore"
 
 [dotnet]
 

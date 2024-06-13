@@ -118,7 +118,7 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_72s5d"]
 radius = 13.0
-height = 58.0
+height = 40.0
 
 [node name="Fire" type="Area2D"]
 script = ExtResource("1_g8rvi")
@@ -131,6 +131,7 @@ sprite_frames = SubResource("SpriteFrames_hgg48")
 frame_progress = 0.333574
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 5)
 shape = SubResource("CapsuleShape2D_72s5d")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

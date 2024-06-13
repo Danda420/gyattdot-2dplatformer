@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://byuov4gg5sf54"]
+[gd_scene load_steps=12 format=3 uid="uid://byuov4gg5sf54"]
 
 [ext_resource type="Texture2D" uid="uid://o3de5577lb83" path="res://tile.png" id="1_e5inh"]
 [ext_resource type="PackedScene" uid="uid://cjsbn030lxswb" path="res://scenes/main_char.tscn" id="2_5p7e8"]
+[ext_resource type="Script" path="res://scenes/main_char_lvl3.gd" id="3_83hhl"]
 [ext_resource type="PackedScene" uid="uid://bfrr5chrqpj2u" path="res://scenes/finishFlag.tscn" id="3_f756f"]
 [ext_resource type="PackedScene" uid="uid://kvdwopbldyad" path="res://finish_scene.tscn" id="4_dmuuc"]
 [ext_resource type="Script" path="res://score_counter3.gd" id="5_068gh"]
@@ -990,6 +991,7 @@ layer_0/tile_data = PackedInt32Array(3473408, 1179649, 6, 3538944, 1179649, 7, 3
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_5p7e8")]
 position = Vector2(25, 333)
+script = ExtResource("3_83hhl")
 
 [node name="Finish" parent="." instance=ExtResource("3_f756f")]
 target_level = ExtResource("4_dmuuc")
