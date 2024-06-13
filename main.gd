@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 
 # Called when the node enters the scene tree for the first time.
@@ -10,7 +10,5 @@ func _ready():
 func _process(delta):
 	pass
 
-@export var target_level : PackedScene
-
 func _on_button_pressed():
-	get_tree().change_scene_to_packed(target_level)
+	get_tree().change_scene_to_file("res://lvl1.tscn")

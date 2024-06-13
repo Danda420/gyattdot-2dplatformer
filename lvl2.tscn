@@ -981,7 +981,7 @@ texture = ExtResource("1_sswjd")
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_ecsnx")
 
-[node name="Node" type="Node"]
+[node name="lvl2" type="Node"]
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.76543, 0.70294)

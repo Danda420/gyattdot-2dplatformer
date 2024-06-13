@@ -967,7 +967,7 @@ texture = ExtResource("1_50703")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qnxxx")
 
-[node name="Node" type="Node"]
+[node name="lvl1" type="Node"]
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.765139, 0.699534)

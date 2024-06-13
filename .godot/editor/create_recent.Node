@@ -1,8 +1,8 @@
+Node
 CollisionShape2D
 AnimatedSprite2D
 Area2D
 Panel
-Node
 Label
 CanvasLayer
 Button
