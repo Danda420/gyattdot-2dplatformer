@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://c3d4qpyi5g2j2"]
 
-[ext_resource type="Texture2D" uid="uid://o3de5577lb83" path="res://tile.png" id="1_sswjd"]
+[ext_resource type="Texture2D" uid="uid://o3de5577lb83" path="res://assets/tile.png" id="1_sswjd"]
 [ext_resource type="PackedScene" uid="uid://cjsbn030lxswb" path="res://scenes/main_char.tscn" id="2_ci24r"]
 [ext_resource type="PackedScene" uid="uid://bfrr5chrqpj2u" path="res://scenes/finishFlag.tscn" id="3_ge4kf"]
 [ext_resource type="Script" path="res://scenes/main_char_lvl2.gd" id="3_tfjbf"]
-[ext_resource type="Script" path="res://score_counter2.gd" id="5_fx7m8"]
+[ext_resource type="Script" path="res://score_counter_lvl2.gd" id="5_fx7m8"]
 [ext_resource type="PackedScene" uid="uid://byuov4gg5sf54" path="res://lvl3.tscn" id="5_pkqs3"]
 [ext_resource type="PackedScene" uid="uid://chxfdpb7etbkf" path="res://scenes/void.tscn" id="7_iyr7g"]
 [ext_resource type="PackedScene" uid="uid://crw36x8ppb5ig" path="res://scenes/permen1.tscn" id="7_uspbr"]

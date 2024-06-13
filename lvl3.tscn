@@ -1,17 +1,17 @@
 [gd_scene load_steps=12 format=3 uid="uid://byuov4gg5sf54"]
 
-[ext_resource type="Texture2D" uid="uid://o3de5577lb83" path="res://tile.png" id="1_e5inh"]
+[ext_resource type="Texture2D" uid="uid://o3de5577lb83" path="res://assets/tile.png" id="1_7vskk"]
 [ext_resource type="PackedScene" uid="uid://cjsbn030lxswb" path="res://scenes/main_char.tscn" id="2_5p7e8"]
 [ext_resource type="Script" path="res://scenes/main_char_lvl3.gd" id="3_83hhl"]
 [ext_resource type="PackedScene" uid="uid://bfrr5chrqpj2u" path="res://scenes/finishFlag.tscn" id="3_f756f"]
 [ext_resource type="PackedScene" uid="uid://kvdwopbldyad" path="res://finish_scene.tscn" id="4_dmuuc"]
-[ext_resource type="Script" path="res://score_counter3.gd" id="5_068gh"]
+[ext_resource type="Script" path="res://score_counter_lvl3.gd" id="6_sq2nn"]
 [ext_resource type="PackedScene" uid="uid://cueme7143ehav" path="res://scenes/permen2.tscn" id="7_h1ou0"]
 [ext_resource type="PackedScene" uid="uid://chxfdpb7etbkf" path="res://scenes/void.tscn" id="7_yx25x"]
 [ext_resource type="PackedScene" uid="uid://crw36x8ppb5ig" path="res://scenes/permen1.tscn" id="8_xpt7e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6hsyd"]
-texture = ExtResource("1_e5inh")
+texture = ExtResource("1_7vskk")
 13:5/0 = 0
 13:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 13:5/0/physics_layer_0/angular_velocity = 0.0
@@ -998,7 +998,7 @@ target_level = ExtResource("4_dmuuc")
 
 [node name="ScoreCounter" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("5_068gh")
+script = ExtResource("6_sq2nn")
 
 [node name="Score" type="CanvasLayer" parent="."]
 

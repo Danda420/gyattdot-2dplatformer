@@ -8,5 +8,5 @@ func _ready():
 func _on_body_entered(body):
 	if body.name == "CharacterBody2D":
 		queue_free()
-		ScoreManager.add_score_permen2()
+		GameManager.add_score_permen2()
 

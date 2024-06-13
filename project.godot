@@ -13,12 +13,11 @@ config_version=5
 config/name="2DPatformerNightCarnival"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-boot_splash/image="res://background.png"
-config/icon="res://icon.svg"
+boot_splash/image="res://assets/background.png"
 
 [autoload]
 
-ScoreManager="*res://score_counter_autoload.gd"
+GameManager="*res://game_manager.gd"
 
 [display]
 

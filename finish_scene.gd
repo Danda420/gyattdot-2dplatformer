@@ -2,7 +2,7 @@ extends Node
 
 @onready var scorelabel = %Label
 
-var score = ScoreManager.get_score()
+var score = GameManager.get_score()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,5 +14,5 @@ func _process(delta):
 
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://main.tscn")
-	ScoreManager.reset_score()
+	GameManager.reset_score()
 
