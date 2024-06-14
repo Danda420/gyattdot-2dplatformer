@@ -10,5 +10,12 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_button_pressed():
-	get_tree().change_scene_to_file("res://difficulty_selecor.tscn")
+
+func _on_difficulty_1_pressed():
+	GameManager.set_health(5)
+	get_tree().change_scene_to_file("res://lvl1.tscn")
+
+
+func _on_difficulty_2_pressed():
+	GameManager.set_health(3)
+	get_tree().change_scene_to_file("res://lvl1.tscn")

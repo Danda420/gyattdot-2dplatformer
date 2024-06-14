@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://beaxy1q5pxnor"]
+
+[ext_resource type="Script" path="res://difficulty_selecor.gd" id="1_00ofx"]
+[ext_resource type="Texture2D" uid="uid://dngv2rhbxs5ck" path="res://assets/background.png" id="2_51lev"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_00ofx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+texture = ExtResource("2_51lev")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1151.0
+offset_bottom = 644.0
+
+[node name="difficulty1" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 214.0
+offset_top = -238.0
+offset_right = -601.0
+offset_bottom = -188.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Normal"
+
+[node name="difficulty2" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 572.0
+offset_top = -237.0
+offset_right = -242.0
+offset_bottom = -187.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Hard"
+
+[node name="Title" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -53.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 80
+text = "DIFFICULTY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Panel/difficulty1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/difficulty1" to="." method="_on_difficulty_1_pressed"]
+[connection signal="pressed" from="Panel/difficulty2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/difficulty2" to="." method="_on_difficulty_2_pressed"]

@@ -21,14 +21,14 @@ func reset_score():
 	score = 0
 	emit_signal("score_changed")
 
-func reset_health():
-	health = 5
-	emit_signal("health_changed")
-	
 func set_health(new_health: int):
 	health = new_health
 	emit_signal("health_changed")
-
+	
+func reset_health():
+	set_health(5)
+	emit_signal("health_changed")
+	
 func get_health() -> int:
 	return health
 
