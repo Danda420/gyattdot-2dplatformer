@@ -17,7 +17,7 @@ boot_splash/image="res://assets/background.png"
 
 [autoload]
 
-GameManager="*res://game_manager.gd"
+GameManager="*res://scripts/game_manager.gd"
 
 [display]
 
