@@ -18,6 +18,7 @@ boot_splash/image="res://assets/background.png"
 [autoload]
 
 GameManager="*res://scripts/game_manager.gd"
+Backsound="*res://scenes/backsound.tscn"
 
 [display]
 

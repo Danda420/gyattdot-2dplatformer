@@ -5,7 +5,7 @@ signal health_changed
 
 var score = 0
 var health = 5
-
+	
 func add_score_permen1(amount: int = 10):
 	score += amount
 	emit_signal("score_changed")

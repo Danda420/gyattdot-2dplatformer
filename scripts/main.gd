@@ -1,5 +1,6 @@
 extends Node
 
+@onready var button_sfx = %button_sfx
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

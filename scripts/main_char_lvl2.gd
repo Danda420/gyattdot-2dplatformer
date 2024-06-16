@@ -7,6 +7,8 @@ const DASH_SPEED = 800.0
 const DASH_DURATION = 0.2
 
 @onready var health_label = $"/root/lvl2/Score_Health/Panel/Health"
+@onready var jump = %jump
+@onready var dash = %dash
 
 var health = 5
 
@@ -35,6 +37,7 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		jump.play()
 
 	# Get the input direction and handle the movement/deceleration.
 	var direction = Input.get_axis("ui_left", "ui_right")
@@ -64,6 +67,7 @@ func start_dash(direction: float):
 	if direction == 0:
 		return  # Prevent dashing with no input direction
 	if is_on_floor():
+		dash.play()
 		sprite_2d.animation = "dash"
 		is_dashing = true
 		dash_timer = DASH_DURATION

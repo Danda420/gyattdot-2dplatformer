@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cjsbn030lxswb"]
+[gd_scene load_steps=20 format=3 uid="uid://cjsbn030lxswb"]
 
 [ext_resource type="Texture2D" uid="uid://br55bu016e25c" path="res://assets/jump.png" id="1_jht2f"]
 [ext_resource type="Script" path="res://scripts/main_char_lvl1.gd" id="1_nmxit"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://5x7dpl4mfhm8" path="res://assets/idle.png" id="2_62ic7"]
 [ext_resource type="Texture2D" uid="uid://q420w3qdiecc" path="res://assets/running.png" id="4_c3wga"]
 [ext_resource type="Texture2D" uid="uid://dngv2rhbxs5ck" path="res://assets/background.png" id="5_tf60n"]
+[ext_resource type="AudioStream" uid="uid://bt0cpic2it25t" path="res://assets/audio/jump.mp3" id="7_gs3jq"]
+[ext_resource type="AudioStream" uid="uid://2nr8brnh7ooc" path="res://assets/audio/dash.mp3" id="8_gu1j3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3post"]
 atlas = ExtResource("2_1c4x4")
@@ -126,3 +128,11 @@ motion_mirroring = Vector2(800, 316)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource("5_tf60n")
 centered = false
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_gs3jq")
+
+[node name="dash" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("8_gu1j3")

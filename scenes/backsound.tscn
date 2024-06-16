@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://caojr43y0s3ef"]
+
+[ext_resource type="AudioStream" uid="uid://ccsc6qsx46q8v" path="res://assets/audio/backsound.ogg" id="1_apwtr"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_apwtr")
+volume_db = -13.117
+autoplay = true
